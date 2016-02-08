@@ -29,14 +29,13 @@ Andersen, T. G., Bollerslev, T., and Diebold, F. X. (2005),"Roughing it Up: Incl
 \author{Kostin Andrey <andrei.kostin@snowfallsystems.com>}
 \seealso{\code{\link{quarticity_rq}} \code{\link{quarticity_rqq}} \code{\link{quarticity_mrq}} \code{\link{quarticity_mtq}}}
 \examples{ 
-\dontrun{ 
+\dontrun{
 data(spy.data) 
-estimator<-estimator_create(priceDataIx=spy.data)
+estimator<-estimator_create(priceData=spy.data)
 estimator_settings(estimator,
-				   inputSamplingInterval = '10s')
+				   inputSamplingInterval = '10s',
 				   resultsSamplingInterval = '10s')
 util_plot2d(quarticity_rtq(estimator),title="RTQ")
-}
-}
+}}
 \keyword{PortfolioEffectEstim,nonparametric, models}
 \keyword{quarticity_rtq}

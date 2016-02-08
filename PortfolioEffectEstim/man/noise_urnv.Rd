@@ -30,14 +30,13 @@ L. Zhang, P. A. Mykland, and Y. Ait-Sahalia, "A tale of two time scales: Determi
 \author{Kostin Andrey <andrey.kostin@portfolioeffect.com>}
 \seealso{\code{\link{noise_rnv}} \code{\link{noise_acnv}} \code{\link{noise_uznv}}}
 \examples{ 
-\dontrun{ 
+\dontrun{
 data(spy.data) 
-estimator<-estimator_create(priceDataIx=spy.data)
+estimator<-estimator_create(priceData=spy.data)
 estimator_settings(estimator,
-				   inputSamplingInterval = '10s')
+				   inputSamplingInterval = '10s',
 				   resultsSamplingInterval = '10s')
 util_plot2d(noise_urnv(estimator),title="URNV")
-}
-}
+}}
 \keyword{PortfolioEffectEstim,nonparametric, models}
 \keyword{noise_urnv}

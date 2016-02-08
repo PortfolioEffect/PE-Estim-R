@@ -10,10 +10,10 @@
 \description{Method returns active list of settings of a given estimator.}
 \author{Kostin Andrey <andrey.kostin@portfolioeffect.com>}
 \examples{
-\dontrun{ 
+\dontrun{
 dateStart = "2014-11-17 09:30:00"
 dateEnd = "2014-11-17 16:00:00"
-estimator<-portfolio_create('AAPL',dateStart,dateEnd)
+estimator<-estimator_create('AAPL',dateStart,dateEnd)
 estimator_settings(estimator,resultsSamplingInterval='60s')
 settings=estimator_getSettings(estimator)
 }}

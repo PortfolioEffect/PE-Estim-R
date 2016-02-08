@@ -35,15 +35,14 @@ Zhang, L. (2006). Efficient estimation of stochastic volatility using noisy obse
 \author{Kostin Andrey <andrey.kostin@portfolioeffect.com>}
 \seealso{\code{\link{variance_rv}} \code{\link{variance_tsrv}} \code{\link{variance_jrmrv}} \code{\link{variance_mrv}} \code{\link{variance_uzrv}} \code{\link{variance_krv}}}
 \examples{ 
-\dontrun{ 
+\dontrun{
 data(spy.data) 
-estimator<-estimator_create(priceDataIx=spy.data)
+estimator<-estimator_create(priceData=spy.data)
 estimator_settings(estimator,
-				   inputSamplingInterval = '10s')
+				   inputSamplingInterval = '10s',
 				   resultsSamplingInterval = '10s')
 util_plot2d(variance_msrv(estimator),title='MSRV',legend='Simple')+
 util_line2d(variance_msrvRolling(estimator,wLength=3600),legend='Rolling Window')
-}
-}
+}}
 \keyword{PortfolioEffectEstim,nonparametric, models}
 \keyword{variance_msrv}

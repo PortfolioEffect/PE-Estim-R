@@ -1,11 +1,19 @@
-PortfolioEffectHFT v1.1 (Release date: 2015-12-08)
+PortfolioEffectEstim v1.2 (Release date: 2016-02-01)
+==============
+
+Changes:
+
+* Fixed errors in examples
+* Restricted to depend on PortfolioEffectHFT version >= 1.5 due to a ggplot2 update
+
+PortfolioEffectEstim v1.1 (Release date: 2015-12-08)
 ==============
 
 Changes:
 
 * Fixed errors in vignettes.
 
-PortfolioEffectHFT v1.0 (Release date: 2015-11-08)
+PortfolioEffectEstim v1.0 (Release date: 2015-11-08)
 ==============
 
 First commit.

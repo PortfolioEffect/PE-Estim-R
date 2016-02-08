@@ -31,14 +31,13 @@ Robert, C. Y. and Rosenbaum, M. (2012), Volatility and covariation estimation wh
 \author{Kostin Andrey <andrey.kostin@portfolioeffect.com>}
 \seealso{\code{\link{variance_rv}} \code{\link{variance_tsrv}} \code{\link{variance_msrv}} \code{\link{variance_mrv}} \code{\link{variance_jrmrv}} \code{\link{variance_krv}}}
 \examples{ 
-\dontrun{ 
+\dontrun{
 data(spy.data) 
-estimator<-estimator_create(priceDataIx=spy.data)
+estimator<-estimator_create(priceData=spy.data)
 estimator_settings(estimator,
-				   inputSamplingInterval = '10s')
+				   inputSamplingInterval = '10s',
 				   resultsSamplingInterval = '10s')
 util_plot2d(variance_uzrv(estimator),title="UZRV")
-}
-}
+}}
 \keyword{PortfolioEffectEstim,nonparametric, models}
 \keyword{variance_uzrv}

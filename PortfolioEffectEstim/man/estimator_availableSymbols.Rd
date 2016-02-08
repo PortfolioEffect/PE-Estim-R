@@ -13,7 +13,7 @@ Returns a list of symbols .
 }
 \author{Kostin Andrey <andrey.kostin@portfolioeffect.com>}
 \examples{
-\dontrun{ 
+\dontrun{
 estimator<-estimator_create(asset='AAPL',fromTime="2014-09-01 09:00:00", 
 toTime="2014-09-14 16:00:00")
 list=estimator_availableSymbols(estimator)

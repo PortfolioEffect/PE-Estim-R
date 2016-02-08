@@ -30,14 +30,13 @@ Robert, C. Y. and Rosenbaum, M. (2012), Volatility and covariation estimation wh
 \author{Kostin Andrey <andrey.kostin@portfolioeffect.com>}
 \seealso{\code{\link{noise_rnv}} \code{\link{noise_urnv}} \code{\link{noise_acnv}}}
 \examples{ 
-\dontrun{ 
+\dontrun{
 data(spy.data) 
-estimator<-estimator_create(priceDataIx=spy.data)
+estimator<-estimator_create(priceData=spy.data)
 estimator_settings(estimator,
-				   inputSamplingInterval = '10s')
+				   inputSamplingInterval = '10s',
 				   resultsSamplingInterval = '10s')
 util_plot2d(noise_uznv(estimator),title="UZNV")
-}
-}
+}}
 \keyword{PortfolioEffectEstim,nonparametric, models}
 \keyword{noise_uznv}

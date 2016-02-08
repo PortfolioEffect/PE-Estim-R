@@ -1,9 +1,9 @@
 Package: PortfolioEffectEstim
 Type: Package
 Title: High Frequency Price Estimators by PortfolioEffect
-Version: 1.1
-Date: 2015-12-08
-Depends: methods,PortfolioEffectHFT 
+Version: 1.2
+Date: 2016-02-01
+Depends: methods,PortfolioEffectHFT(>= 1.5)
 Imports: rJava
 LazyData: yes
 ByteCompile: TRUE

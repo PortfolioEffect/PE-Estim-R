@@ -29,14 +29,13 @@ Barndorff-Nielsen, O. E. and N. Shephard (2002). Econometric analysis of realize
 \author{Kostin Andrey <andrei.kostin@snowfallsystems.com>}
 \seealso{\code{\link{quarticity_mrq}} \code{\link{quarticity_rqq}} \code{\link{quarticity_rtq}} \code{\link{quarticity_mtq}}}
 \examples{ 
-\dontrun{ 
+\dontrun{
 data(spy.data) 
-estimator<-estimator_create(priceDataIx=spy.data)
+estimator<-estimator_create(priceData=spy.data)
 estimator_settings(estimator,
-				   inputSamplingInterval = '10s')
+				   inputSamplingInterval = '10s',
 				   resultsSamplingInterval = '10s')
 util_plot2d(quarticity_rq(estimator),title="RQ")
-}
-}
+}}
 \keyword{PortfolioEffectEstim,nonparametric, models}
 \keyword{quarticity_rq}

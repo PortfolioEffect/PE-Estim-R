@@ -21,22 +21,20 @@ Default:
 \author{Kostin Andrey <andrey.kostin@portfolioeffect.com>}
 \seealso{ \code{\link{estimator_create}} \code{\link{estimator_getSettings}} }
 \examples{
-\dontrun{ 
-data(aapl.data) 
-data(goog.data) 
+\dontrun{
 data(spy.data) 
-estimator<-estimator_create(priceDataIx=spy.data)
-estimator_settings(portfolio,
-				   inputSamplingInterval = '10s')
+estimator<-estimator_create(priceData=spy.data)
+estimator_settings(estimator,
+				   inputSamplingInterval = '10s',
 				   resultsSamplingInterval = '10s')
-util_plot2d(variance_mrv(estimator))
+util_plot2d(variance_mrv(estimator),title="MRV")
 				   
 dateStart = "2014-11-17 09:30:00"
 dateEnd = "2014-11-17 16:00:00"
-estimator<-portfolio_create('AAPL',dateStart,dateEnd)
+estimator<-estimator_create('AAPL',dateStart,dateEnd)
 estimator_settings(estimator,
 				   resultsSamplingInterval = '10s')
-util_plot2d(variance_mrv(estimator))
+util_plot2d(variance_mrv(estimator),title="MRV")
 }}
 \keyword{PortfolioEffectEstim,nonparametric, models}
 %%\concept{high frequency, intraday analytics, market data, portfolio, portfolio management,realtime analytics, risk, risk management, toolbox tools, trading, trading strategies}
